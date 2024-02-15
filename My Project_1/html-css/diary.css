@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Courier New', Courier, monospace  ;
+}
+.icon{
+    display: none;
+}
+header{
+    background-color: rgb(255, 255, 255);
+    position: fixed ;
+    width: 100%;
+    top: 0;
+}
+header ul{
+    background-color:transparent;
+    position: absolute;
+    width: 60%;
+    right: 0;
+    top:0;
+    line-height: 100px;
+    /*padding-left:30% ;
+    padding-right: 30px;*/
+}
+header li{
+    display: inline;
+    margin: 0px 10%;
+    font-size: 18px;
+    font-weight:200;
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+header ul a:hover{ 
+    text-decoration: underline;
+    color: rgb(182, 182, 182);
+}
+header ul a:active{    
+    background-color: gray;
+}
+header h1{
+    height: 80px;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    line-height: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+/*按鈕跳出選單區*/
+.buttondown{
+    cursor: pointer;
+}
+.buttondown a{
+    display: block;
+    padding:  10px;
+    min-width: 80px;
+    font-size: 15px;
+    font-style:normal;
+}
+.buttondown .buttoncontent{
+    display: none;
+    background-color: rgb(252, 252, 252);
+    position: absolute;
+    box-shadow: 2px 2px 5px  #939292;
+    right: 1vw;
+    top: 4.5em;
+    border-radius: 10px;
+}
+.buttondown:hover img{
+    background-color: rgb(226, 226, 226);
+}
+.buttondown:hover .buttoncontent
+{
+    display: block;
+}
+
+/*按鈕跳出選單區*/
+
+/*body{
+    background-color: #e9edc9;
+}*/
+
+blockquote{
+    margin: 0px 6.5vw;
+    background-image: url(images/background.jpg);
+    text-align: center; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    max-width: 100%;
+    margin:10vh auto;
+    padding: 200px 300px;
+}
+blockquote h1{
+    font-size: 300%;
+    margin-top: 5vw;
+}
+blockquote h3{
+    margin: 50px 0px;
+    line-height: 200%;
+}
+blockquote button{
+    margin-top: 40px;
+    background-color: transparent;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.justColor{
+    
+    padding-left: 47%;
+    line-height: 4em;
+}
+.content01{
+    background-color: #e9edc9;
+    margin: 10%;
+    /*border-style: solid;*/
+	box-shadow: 3px 3px #c6c6c6 ;
+
+}
+
+.day1{
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 10vh;
+}
+.day1 img{
+    width: 40vw;
+    border: 5px;
+    border-style: solid;
+    border-color: rgb(255, 199, 135);
+}
+.day1 div{
+    background-position: center;
+    margin-left: 5%;
+    width: 250px; 
+}
+.day1 p{
+    line-height: 2em;
+}
+.day1 h3{
+    font-size: 60px;
+}
+    
+
+.day1-1{
+    
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+.day1-1 img{
+    width: 40vw;
+    margin-top: 4vh;
+    border: 5px;
+    border-style: solid;
+    border-color: rgb(255, 199, 135);
+}
+.day1-1 div{
+    background-position: center;
+    padding: 2vw 0vw;
+    margin-left: 5%;
+    width: 250px;
+}
+.day1-1 p{
+    line-height: 2em;
+}
+
+
+.figmaPicture{
+    width: 65%;
+    margin:10vh auto 0 auto;
+    padding: 4vh 1vw;
+    display: flex;
+    justify-content: center;
+    background-color: #b8d3aa;
+    box-shadow: 0 0 15px  #92ce92;
+    border: transparent;
+    border-style: dashed;
+    border-radius: 15px;
+}
+.figmaPicture img{
+    width: 30vw;
+    padding: 1vh 1vw ;
+}
+figcaption p{
+    width:65% ;
+    margin:1vh auto 0 auto;
+    padding: 1vh 1vw;
+    background-color: rgb(158, 158, 158);
+    border-style: dashed;
+    border-color: transparent;
+    border-radius: 15px;
+    box-shadow: 0 0 15px  #7f7f7f;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.Icon img{
+    width: 22vw;
+}
+ 
+
+footer{
+    margin-top: 15vh;
+    background-color: darkseagreen;
+    height: 8vh;
+}
+footer p{
+    text-align: center;
+    line-height: 4vw;
+}
+
+@media(max-width:1024px){
+    header li{
+        display: none;
+    }
+    .icon{
+        display:block;
+        position: absolute;
+        right: 5%;
+        top:1.7em;
+    }
+}

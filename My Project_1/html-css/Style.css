@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Courier New', Courier, monospace  ;
+}
+.icon{
+    display: none;
+}
+header{
+    background-color: rgb(255, 255, 255);
+    position: fixed ;
+    width: 100%;
+    top: 0;
+}
+header ul{
+    background-color:transparent;
+    position: absolute;
+    width: 60%;
+    right: 0;
+    top:0;
+    line-height: 100px;
+    /*padding-left:30% ;
+    padding-right: 30px;*/
+}
+header li{
+    display: inline;
+    margin: 0px 10%;
+    font-size: 18px;
+    font-weight:200;
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+header ul a:hover{ 
+    text-decoration: underline;
+    color: rgb(182, 182, 182);
+}
+header ul a:active{    
+    background-color: gray;
+}
+header h1{
+    height: 80px;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    line-height: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+/*按鈕跳出選單區*/
+.buttondown{
+    cursor: pointer;
+}
+.buttondown a{
+    display: block;
+    padding:  10px;
+    min-width: 80px;
+    font-size: 15px;
+    font-style:normal;
+}
+.buttondown .buttoncontent{
+    display: none;
+    background-color: rgb(252, 252, 252);
+    position: absolute;
+    box-shadow: 2px 2px 5px  #939292;
+    right: 1vw;
+    top: 4.5em;
+    border-radius: 10px;
+}
+.buttondown:hover img{
+    background-color: rgb(226, 226, 226);
+}
+.buttondown:hover .buttoncontent
+{
+    display: block;
+}
+
+/*按鈕跳出選單區*/
+
+/*body{
+    background-color: #e9edc9;
+}*/
+
+blockquote{
+    margin: 0px 6.5vw;
+    
+    text-align: center;
+    background-image: url(images/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    /*background-size:auto;*/
+    
+    /*background-color:rgb(238, 238, 116) ;*/
+    max-width: 700px;
+    margin-top:8vw;
+    padding: 200px 300px;
+}
+blockquote h1{
+    font-size: 50px;
+    margin-top: 5vw;
+}
+blockquote h3{
+    margin: 50px 0px;
+    line-height: 200%;
+}
+blockquote button{
+    margin-top: 40px;
+    background-color: transparent;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.justColor{
+    margin-top: 10vh;
+    padding-left: 47%;
+    line-height: 6em;
+    color: transparent;
+    background-image: url(images/Featured.jpg);
+    background-repeat: no-repeat;
+    background-size: 12em;
+    background-position: center;
+}
+.Introduceblock{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 20vh;
+}
+
+.introduce{
+    margin: 0px 50px;
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px #000000;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: transparent;
+}
+.introduce img{
+    width: 200px;
+    margin: auto;
+    box-shadow: 2px 2px 5px;
+}
+.introduce button{
+    width: 150px;
+    margin: auto;
+    background-color: transparent;
+}
+
+
+
+footer{ 
+    margin-top: 15vh;
+    background-color: rgb(255, 255, 255);
+    height: 8vh;
+}
+footer p{
+    text-align: center;
+    line-height: 4vw;
+}
+
+@media(max-width:1024px){
+    header li{
+        display: none;
+    }
+    .icon{
+        display:block;
+        position: absolute;
+        right: 5%;
+        top:1.7em;
+    }
+    blockquote{
+        margin: 0px 6.5vw;
+        
+        text-align: center;
+        background-image: url(images/background.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:contain;
+        /*background-size:auto;*/
+        
+        /*background-color:rgb(238, 238, 116) ;*/
+        max-width: 200px;
+        margin-top:8vw;
+        padding: 200px 300px;
+    }
+    blockquote h1{
+        font-size: 30px;
+        margin-top: 5vw;
+        width: 150px;
+        
+    }
+    blockquote h3{
+        margin: 50px 0px;
+        line-height: 200%;
+        width: 200px;
+        background-position: center;
+    }
+    blockquote button{
+        margin-top: 40px;
+        background-color: transparent;
+        padding: 5px 10px;
+        border-radius: 10px;
+    }
+}   
